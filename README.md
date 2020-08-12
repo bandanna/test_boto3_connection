@@ -9,7 +9,9 @@ https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
 You can configure aws keys in the same shell session where you'll be using Boto3. 
 
-Example:
+Examples:
+
+Linux ->
 ```
 # These are dummy passwords, don't worry xD
 export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
@@ -19,6 +21,17 @@ export AWS_DEFAULT_REGION=eu-west-1
 # Now run the script
 python3 test_boto3_connection.py
 
+```
+
+Windows ->
+```
+# These are dummy passwords, don't worry xD
+C:\> setx AWS_ACCESS_KEY_ID AKIAIOSFODNN7EXAMPLE
+C:\> setx AWS_SECRET_ACCESS_KEY wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+C:\> setx AWS_DEFAULT_REGION eu-west-1
+
+# Now run the script
+python3 test_boto3_connection.py
 ```
 
 If your python script works, then congrats!
